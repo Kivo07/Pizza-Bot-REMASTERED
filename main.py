@@ -33,7 +33,7 @@ class PizzaBuyer:
 # A person who wants pizza
 
 
-Nathan = PizzaBuyer("731 Sundew Drive", "Waterloo", "ON", "N2K 0B4")
+Nathan = PizzaBuyer("", "", "", "")
 
 # A function made to fill out the order information
 
