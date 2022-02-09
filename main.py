@@ -33,7 +33,7 @@ class PizzaBuyer:
 # A person who wants pizza
 
 
-Nathan = PizzaBuyer("", "", "", "")
+Nathan = PizzaBuyer("731 Sundew Drive", "Waterloo", "ON", "N2K 0B4")
 
 # A function made to fill out the order information
 
@@ -76,4 +76,31 @@ def scroll():
 dv.implicitly_wait(10)
 
 scroll()
+
+# This function orders Sprite
+
+
+def order_drink():
+    sprite = dv.find_element(By.CSS_SELECTOR, 'a[class="navigation-drinks c-site-nav-main-link-3"]')
+    sprite.click()
+    order_sprite = dv.find_element(By.CSS_SELECTOR, 'a[href="#!/product/F_SPRITE/builder/"]')
+    order_sprite.click()
+    size = dv.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
+    size.click()
+
+
+order_drink()
+
+
+def buypizza():
+    cart = dv.find_element(By.CSS_SELECTOR, 'a[href="/en/"]')
+    cart.click()
+    see_cart = dv.find_element(By.CSS_SELECTOR, 'a[href="/en/pages/order/#!/checkout/?bypassUpsellOverlays=1"]')
+    see_cart.click()
+
+
+dv.implicitly_wait(10)
+
+
+buypizza()
 
