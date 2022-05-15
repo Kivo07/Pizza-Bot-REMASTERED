@@ -1,0 +1,1 @@
+Please note that if the HTML of the website changes, the bot will need to be updated
